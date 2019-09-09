@@ -80,6 +80,8 @@ test:
 #
 production:
   <<: *default
-  database: learningebs_production
-  username: learningebs
-  password: <%= ENV['LEARNINGEBS_DATABASE_PASSWORD'] %>
+  database: authors-haven-rds-deux
+  username: bruce
+  password: <%= ENV['PRODUCTION_DATABASE_PASSWORD'] %>
+  host: <%= ENV['PRODUCTION_DATABASE_HOST'] %>
+  port: <%= ENV['PRODUCTION_DATABASE_PORT'] %>
