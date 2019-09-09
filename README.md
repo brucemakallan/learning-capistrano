@@ -8,3 +8,8 @@ This repo is/was used to aid in the deployment of a **Ruby on Rails** applicatio
 
 #### Live App
 http://ec2-52-90-9-60.compute-1.amazonaws.com/
+
+1. List all Articles:
+   **GET** `http://ec2-52-90-9-60.compute-1.amazonaws.com/articles`
+2. Create an Article:
+   **POST** `http://ec2-52-90-9-60.compute-1.amazonaws.com/articles`
