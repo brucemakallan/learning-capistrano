@@ -59,3 +59,12 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+role :app, %w{ubuntu@ec2-52-90-9-60.compute-1.amazonaws.com}
+role :web, %w{ubuntu@ec2-52-90-9-60.compute-1.amazonaws.com}
+role :db,  %w{ubuntu@ec2-52-90-9-60.compute-1.amazonaws.com}
+set :ssh_options, {
+  keys: %w(/Users/brucemakallan/Desktop/programming/aws/bruce-authors-haven.pem),
+  forward_agent: false,
+  auth_methods: %w(publickey password)
+}
